@@ -1,0 +1,508 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #0b0c17;
+    
+}
+
+/* *                      Header       *******************/
+
+
+/* *                      Logo  */
+
+header{
+    background: url("../img/ilustracion1.png") right/contain no-repeat;
+}
+
+header article:first-of-type{
+    height: 50px;
+    display: flex;
+    padding: 2%;
+}
+
+#logoTop{
+    width: 70px;
+}
+
+h1, h2,  h3, h6, p{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-size: 6em;
+}
+
+p{
+    font-size: 2em;
+}
+
+header h3{
+    font-size: 2em;
+}
+header h6{
+    font-size: 1em;
+}
+
+article div{
+    padding-left: 10px;
+    display: inline-block;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* *                      Header - text  */
+
+header article:nth-of-type(2){
+    margin-top: 10%;
+    width: 45%;
+    padding-left: 7%;
+}
+
+header h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    font-size: 8em;
+}
+
+header p{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 2.5em;
+    line-height: 90%;
+}
+
+header article:nth-of-type(2) img{
+    display: inline-block;
+    /* float: right; */
+}
+
+@keyframes flying_one {
+    0%   {top:-200px}
+    25%  {top:-150px}
+    50%  {top:-100px}
+    75%  {top:-150px}
+    100% {top:-200px}
+  }
+
+#flying-man{
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    right: 0;    
+    animation: flying_one 5s infinite;
+    
+}
+
+
+
+/* *                      *************              MAIN               *************** */
+
+
+
+#scroll_main{
+    display: inline-block;
+    color: #ff3571;
+    text-decoration: none;
+    padding-left: 7%;
+    margin-top: 10%;
+    font-weight: 700;
+}
+
+main img:first-of-type{
+    margin-top: 250px;
+    width: 100%;
+}
+
+main section:nth-of-type(1){
+    margin-top: 250px;
+    padding-left: 10%;
+    margin-right: 10%;
+
+    display: inline-block;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main section:nth-of-type(1) > h2{
+    flex-grow: 1;
+    display: inline-block;
+    
+    width: 25%;
+}
+
+main section:nth-of-type(1) p{
+    flex-grow: 1;
+    display: inline-block;
+    font-size: 2em;
+    width: 50%;
+    line-height: 160%;
+    margin-right: 8%;
+    margin-top: 60px;
+    
+}
+
+#idea{
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    display: inline-block;
+}
+
+main section:nth-of-type(1) article{
+    margin-top: 250px;
+    padding-left: 10%;
+    margin-right: 10%;
+    width: 90%; 
+}
+
+main section:nth-of-type(2){
+    margin-top: 250px;
+    margin-bottom: 250px;
+    padding-left: 10%;
+    margin-right: 10%;
+
+    display: inline-block;
+    width:55%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*                  *              FOUR COLUMNS      *************** */
+
+/*  ?       Vielleicht geht das einfacher?  Mit Beibehaltung der Textausrichtung.  */
+
+#four_columns{
+    margin: 100px;
+    display: flex;
+
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items:flex-start
+
+}
+#four_columns article{
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 10%;
+}
+
+#four_columns article:nth-of-type(1)::before{
+    background-image: url("../img/title02.svg");
+    margin-right: 20px;
+    margin-left: -62px;
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
+#four_columns article:nth-of-type(2)::before{
+    background-image: url("../img/title04.svg");
+    margin-right: 20px;
+    margin-left: -62px;
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
+#four_columns article:nth-of-type(3)::before{
+    background-image: url("../img/title01.svg");
+    margin-right: 20px;
+    margin-left: -62px;
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
+#four_columns article:nth-of-type(4)::before{
+    background-image: url("../img/title03.svg");
+    margin-right: 20px;
+    margin-left: -62px;
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
+
+#four_columns p{
+    display: inline-block;
+    font-size: 2.3em;
+    line-height: 180%;
+    
+}
+#four_columns img{
+    display: inline-block;
+    width: 40px;
+}
+
+
+/* *                         Lets-go and double pics */
+
+
+.center_all{
+    /* width: 60%; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 10%;
+}
+
+.center_all h2{
+    margin-bottom: 80px;
+}
+
+.center_all p{
+width: 58%;
+font-size: 2.5em;
+opacity: 0.9;
+}
+
+/* *                            4 last Articles with bg                */
+
+
+#articles_aside article{
+    padding-left: 50%;
+   
+    margin-bottom:10%;
+}
+
+#articles_aside article:nth-of-type(1){
+    background: url("../img/step01.png") left/contain no-repeat;
+    background-position:8%;
+}
+#articles_aside article:nth-of-type(2){
+    background: url("../img/step02.png") right/contain no-repeat;
+}
+#articles_aside article:nth-of-type(3){
+    background: url("../img/step03.png") left/contain no-repeat;
+    background-position:6%
+}
+#articles_aside article:nth-of-type(4){
+    background: url("../img/step04.png") right/contain no-repeat;
+}
+
+
+
+#articles_aside h1{
+    display: block;
+    font-size: 8em;
+    color: #dddddd;
+    margin-bottom: 10%;
+}
+
+#articles_aside img{
+    display: block;
+    margin: 0;
+    width: 50px;
+}
+
+#articles_aside p{
+font-size: 2.3em;
+opacity: 0.9;
+line-height: 160%;
+margin-right: 5%;
+
+}
+
+#articles_aside p b{
+    display: inline-block;
+    margin: 30px 0;
+}
+
+#articles_aside p:last-of-type{
+    padding-bottom: 5%;
+}
+
+#articles_aside article:nth-of-type(2n){
+    padding-left: 5%;
+    padding-right: 50%;
+    background-position:90% 
+}
+
+
+/* ****************                  Sryling FORMs             ************ */
+
+#signForm {
+    /* display: none; */
+}
+
+
+input[type="email"]{
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    text-align: center;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    font-size: 2em;
+    border:none;
+    box-shadow:0px 30px 50px -2px #f5f3f3;
+    
+}
+
+input[type="button"]{
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    background-color: #ff3571;
+    color:white;
+    box-shadow: none;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 3px;
+}
+
+/* ?            Transition by buttons doenst work? */
+input[type="button"]:hover{
+    cursor: pointer;
+    background:linear-gradient(to right,#ff3571, #3C30FF);
+    transition: 5s;
+}
+
+
+/* ****************                  Confirmation Form            ************ */
+
+#after-confirm{
+    display: none;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 100px;
+}
+
+
+#after-confirm2{
+    align-self: center;
+}
+
+main section:last-of-type{
+    display: inline;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 100px; */
+    align-items:center;
+}
+
+main section:last-of-type article{
+    
+    text-align: center;
+    box-shadow: 0 0 10px rgba(207, 203, 203, 0.8);
+    width: 60%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    /* border:1px grey solid; */
+}
+
+
+main section:last-of-type article p, h2, a{
+    padding: 15px 40px;
+}
+
+
+main section:last-of-type article img{
+    margin: 0;
+    display: inline-block;
+    width: 50px;
+
+}
+
+main section:last-of-type article p{
+    font-size: 1em;
+    padding-bottom: 35px;
+}
+
+#after-confirm2 p
+{
+    font-size: 1em;
+    padding-bottom: 35px;
+}
+
+main section:last-of-type article h2{
+    display: inline-block;
+    font-size: 2em;
+}
+
+/* #after-confirm2 h2{
+    display: inline-block;
+    font-size: 2em;
+} */
+
+main section:last-of-type article p a{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    background-color: rgb(138, 11, 212);
+    padding: 10px 30px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main section:last-of-type article p a:hover{
+    
+    background-color: rgb(155, 151, 158);
+    transition: 2s;
+}
+
+#button-refresh{
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    background-color:rgb(138, 11, 212);
+}
+
+
+#super-button{
+    background-color: rgb(155, 151, 158);
+    transition: 2s;
+}
+
+
+
+
+/* *  FOR SECOND EDITION -    IN PROGRESSS*/
+/* #white-page{
+    display: none;
+}
+
+#after-confirm2 p, h2, a{
+    padding: 15px 40px;
+}
+#white-page #logoTop{
+    padding: 40px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
